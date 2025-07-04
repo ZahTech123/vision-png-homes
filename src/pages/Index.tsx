@@ -1,105 +1,20 @@
-import { Button } from "@/components/ui/button";
-import { ProcessOverview } from "@/components/ProcessOverview";
-import { FilterBar } from "@/components/FilterBar";
-import { PropertyCard } from "@/components/PropertyCard";
+import { Navigation } from "@/components/Navigation";
+import { HeroSection } from "@/components/HeroSection";
+import { ProcessSection } from "@/components/ProcessSection";
+import { PropertySection } from "@/components/PropertySection";
 import { StatsBar } from "@/components/StatsBar";
 import { AgentCard } from "@/components/AgentCard";
 import { AgentCarousel } from "@/components/AgentCarousel";
-
-// Import property images
-import elegantVilla from "@/assets/elegant-contemporary-villa.jpg";
-import luxuryBeachfront from "@/assets/luxury-beachfront-retreat.jpg";
-import modernMinimalist from "@/assets/modern-minimalist-home.jpg";
-import opulentPenthouse from "@/assets/opulent-penthouse.jpg";
-import stylishStudio from "@/assets/stylish-studio-apartment.jpg";
-import classicColonial from "@/assets/classic-colonial-house.jpg";
-import modernVillaPool from "@/assets/modern-white-villa-pool.jpg";
+import { NewsletterSection } from "@/components/NewsletterSection";
+import { Footer } from "@/components/Footer";
 
 // Import agent images
 import agentMyriam from "@/assets/agent-myriam-ortega.jpg";
 import agentDavid from "@/assets/agent-david-jones.jpg";
 import agentMary from "@/assets/agent-mary-garcia.jpg";
+import modernVillaPool from "@/assets/modern-white-villa-pool.jpg";
 
 const Index = () => {
-  const processSteps = [
-    { title: "Find Your Perfect Home Tailored To Your Needs." },
-    { title: "Complete Your Information To Secure Check-In Availability." },
-    { title: "Complete Your Transaction For Instant Confirmation." }
-  ];
-
-  const propertyFilters = [
-    { text: "All Type", active: true },
-    { text: "Apartments/Flats", active: false },
-    { text: "Villas", active: false },
-    { text: "Duplex Homes", active: false },
-    { text: "Penthouse Suites", active: false },
-    { text: "Bungalows", active: false },
-    { text: "Farmhouses", active: false }
-  ];
-
-  const properties = [
-    {
-      imageSrc: elegantVilla,
-      price: "$ 3,499.00",
-      period: "/month",
-      title: "Elegant Contemporary Villa with Garden",
-      address: "400 Ventura Pl, San Ramon, CA 94583, USA",
-      beds: "3 Beds",
-      bathrooms: "3 Bathrooms",
-      area: "68m²"
-    },
-    {
-      imageSrc: luxuryBeachfront,
-      price: "$ 3,499.00",
-      period: "/month",
-      title: "Luxury Beachfront Retreat with Terrace",
-      address: "400 Ventura Pl, San Ramon, CA 94583, USA",
-      beds: "3 Beds",
-      bathrooms: "3 Bathrooms",
-      area: "68m²"
-    },
-    {
-      imageSrc: modernMinimalist,
-      price: "$ 3,499.00",
-      period: "/month",
-      title: "Modern Minimalist Home with Smart Features",
-      address: "400 Ventura Pl, San Ramon, CA 94583, USA",
-      beds: "3 Beds",
-      bathrooms: "3 Bathrooms",
-      area: "68m²"
-    },
-    {
-      imageSrc: opulentPenthouse,
-      price: "$ 3,499.00",
-      period: "/month",
-      title: "Opulent Penthouse with Rooftop Deck",
-      address: "400 Ventura Pl, San Ramon, CA 94583, USA",
-      beds: "3 Beds",
-      bathrooms: "3 Bathrooms",
-      area: "68m²"
-    },
-    {
-      imageSrc: stylishStudio,
-      price: "$ 3,499.00",
-      period: "/month",
-      title: "Stylish Studio Apartment with Balcony",
-      address: "400 Ventura Pl, San Ramon, CA 94583, USA",
-      beds: "3 Beds",
-      bathrooms: "3 Bathrooms",
-      area: "68m²"
-    },
-    {
-      imageSrc: classicColonial,
-      price: "$ 3,499.00",
-      period: "/month",
-      title: "Classic Colonial House with Spacious Porch",
-      address: "400 Ventura Pl, San Ramon, CA 94583, USA",
-      beds: "3 Beds",
-      bathrooms: "3 Bathrooms",
-      area: "68m²"
-    }
-  ];
-
   const stats = [
     { value: "200k", label: "Causal Related" },
     { value: "65k", label: "Happy Customers" },
@@ -129,40 +44,16 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="py-6 px-6">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-2xl font-bold text-foreground">Vision Real Estate PNG</h1>
-        </div>
-      </header>
-
-      {/* Process Overview */}
-      <ProcessOverview steps={processSteps} />
-
-      {/* Find Your Dream Property Section */}
-      <section className="py-16 px-6">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-5xl font-bold text-foreground mb-8">
-            Find Your Dream Property
-          </h2>
-          
-          <div className="mb-12">
-            <FilterBar filters={propertyFilters} />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {properties.map((property, index) => (
-              <PropertyCard key={index} {...property} />
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <Navigation />
+      <HeroSection />
+      <ProcessSection />
+      <PropertySection />
+      
       {/* Trusted Partner Section */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-6 bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
-            <h2 className="text-5xl font-bold text-foreground mb-4 max-w-3xl">
+            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4 max-w-3xl">
               Your Trusted Partner in Elite Property Brokerage
             </h2>
             <StatsBar stats={stats} />
@@ -186,16 +77,16 @@ const Index = () => {
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
               </p>
-              <Button variant="secondary" size="lg" className="font-semibold">
+              <button className="bg-background text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-background/90 transition-colors">
                 Choose Your Property
-              </Button>
+              </button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Contact Agents Section */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-6 bg-muted/20">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <div className="lg:col-span-2">
@@ -227,7 +118,7 @@ const Index = () => {
             </div>
             
             <div className="lg:col-span-3">
-              <h2 className="text-5xl font-bold text-foreground mb-4">
+              <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
                 Contact With Our Top Agents
               </h2>
               <p className="text-muted-foreground mb-8 text-lg">
@@ -239,26 +130,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Recent Projects Section */}
-      <section className="py-16 px-6">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold text-foreground mb-8">
-            Our Recent Projects
-          </h2>
-          <div className="text-center text-muted-foreground py-12">
-            <p className="text-lg">Coming soon...</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="border-t border-border py-8 px-6">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-muted-foreground">
-            © 2024 Vision Real Estate PNG. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <NewsletterSection />
+      <Footer />
     </div>
   );
 };
