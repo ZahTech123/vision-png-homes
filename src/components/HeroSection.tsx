@@ -10,6 +10,13 @@ export function HeroSection() {
     { value: "1200+", label: "Successful Leases" }
   ];
 
+  const handleScrollToProperties = () => {
+    const element = document.getElementById("properties");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="bg-gradient-to-br from-primary/5 to-primary/10 py-16">
       <div className="max-w-7xl mx-auto px-6">
@@ -23,7 +30,7 @@ export function HeroSection() {
               <p className="text-lg text-muted-foreground mb-8 max-w-md">
                 Connecting businesses with premium commercial properties across Papua New Guinea.
               </p>
-              <Button size="lg" className="text-lg px-8 py-3">
+              <Button size="lg" className="text-lg px-8 py-3" onClick={handleScrollToProperties}>
                 Explore Properties
               </Button>
             </div>

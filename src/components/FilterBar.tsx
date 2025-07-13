@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -7,25 +6,18 @@ interface FilterBarProps {
     text: string;
     active?: boolean;
   }>;
+  onFilterClick: (filterText: string) => void;
+  activeFilter: string;
 }
 
-export function FilterBar({ filters: initialFilters }: FilterBarProps) {
-  const [filters, setFilters] = useState(initialFilters);
-
-  const handleFilterClick = (index: number) => {
-    setFilters(prev => prev.map((filter, i) => ({
-      ...filter,
-      active: i === index
-    })));
-  };
-
+export function FilterBar({ filters, onFilterClick, activeFilter }: FilterBarProps) {
   return (
     <div className="flex justify-center gap-3 flex-wrap">
-      {filters.map((filter, index) => (
+      {filters.map((filter) => (
         <Button
           key={filter.text}
-          variant={filter.active ? "default" : "secondary"}
-          onClick={() => handleFilterClick(index)}
+          variant={filter.text === activeFilter ? "default" : "secondary"}
+          onClick={() => onFilterClick(filter.text)}
           className="rounded-full px-6 py-2 text-sm font-medium transition-all hover:scale-105"
         >
           {filter.text}

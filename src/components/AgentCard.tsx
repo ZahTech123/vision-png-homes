@@ -7,9 +7,10 @@ interface AgentCardProps {
   title: string;
   address: string;
   showContactButton?: boolean;
+  onContactClick?: (agentName: string) => void;
 }
 
-export function AgentCard({ imageSrc, name, title, address, showContactButton = false }: AgentCardProps) {
+export function AgentCard({ imageSrc, name, title, address, showContactButton = false, onContactClick }: AgentCardProps) {
   return (
     <Card className="shadow-card hover:shadow-card-lg transition-all duration-300 max-w-xs">
       <CardContent className="p-4">
@@ -28,7 +29,7 @@ export function AgentCard({ imageSrc, name, title, address, showContactButton = 
           {address}
         </p>
         {showContactButton && (
-          <Button variant="outline" size="sm" className="w-full">
+          <Button variant="outline" size="sm" className="w-full" onClick={() => onContactClick?.(name)}>
             Contact Me
           </Button>
         )}

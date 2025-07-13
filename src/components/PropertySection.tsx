@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FilterBar } from "@/components/FilterBar";
 import { PropertyCard } from "@/components/PropertyCard";
 
@@ -10,16 +11,18 @@ import stylishStudio from "@/assets/stylish-studio-apartment.jpg";
 import classicColonial from "@/assets/classic-colonial-house.jpg";
 
 export function PropertySection() {
+  const [activeFilter, setActiveFilter] = useState("All Properties");
+
   const propertyFilters = [
-    { text: "All Properties", active: true },
-    { text: "Office Buildings", active: false },
-    { text: "Retail Spaces", active: false },
-    { text: "Warehouses", active: false },
-    { text: "Co-working Spaces", active: false },
-    { text: "Industrial Sites", active: false }
+    { text: "All Properties" },
+    { text: "Office Buildings" },
+    { text: "Retail Spaces" },
+    { text: "Warehouses" },
+    { text: "Co-working Spaces" },
+    { text: "Industrial Sites" }
   ];
 
-  const properties = [
+  const allProperties = [
     {
       imageSrc: elegantVilla,
       price: "K 8,500",
@@ -28,7 +31,8 @@ export function PropertySection() {
       address: "Level 15, Douglas Street, Port Moresby, NCD",
       beds: "350m²",
       bathrooms: "15th Floor",
-      area: "20 Parking"
+      area: "20 Parking",
+      type: "Office Buildings",
     },
     {
       imageSrc: luxuryBeachfront,
@@ -38,7 +42,8 @@ export function PropertySection() {
       address: "Milne Bay Road, Port Moresby, NCD",
       beds: "200m²",
       bathrooms: "Street Level",
-      area: "10 Parking"
+      area: "10 Parking",
+      type: "Retail Spaces",
     },
     {
       imageSrc: modernMinimalist,
@@ -48,7 +53,8 @@ export function PropertySection() {
       address: "Waigani Drive, Port Moresby, NCD",
       beds: "280m²",
       bathrooms: "Ground Floor",
-      area: "15 Parking"
+      area: "15 Parking",
+      type: "Office Buildings",
     },
     {
       imageSrc: opulentPenthouse,
@@ -58,7 +64,8 @@ export function PropertySection() {
       address: "Champion Parade, Port Moresby, NCD",
       beds: "450m²",
       bathrooms: "Top Floor",
-      area: "25 Parking"
+      area: "25 Parking",
+      type: "Office Buildings",
     },
     {
       imageSrc: stylishStudio,
@@ -68,7 +75,8 @@ export function PropertySection() {
       address: "Ela Beach Road, Port Moresby, NCD",
       beds: "150m²",
       bathrooms: "Open Plan",
-      area: "8 Parking"
+      area: "8 Parking",
+      type: "Co-working Spaces",
     },
     {
       imageSrc: classicColonial,
@@ -78,9 +86,14 @@ export function PropertySection() {
       address: "Taurama Road, Port Moresby, NCD",
       beds: "800m²",
       bathrooms: "High Ceiling",
-      area: "40 Parking"
+      area: "40 Parking",
+      type: "Industrial Sites",
     }
   ];
+
+  const filteredProperties = activeFilter === "All Properties"
+    ? allProperties
+    : allProperties.filter(property => property.type === activeFilter);
 
   return (
     <section className="py-16 px-6 bg-muted/20">
@@ -93,11 +106,15 @@ export function PropertySection() {
             Discover premium commercial spaces with modern amenities and strategic locations across PNG.
           </p>
           
-          <FilterBar filters={propertyFilters} />
+          <FilterBar
+            filters={propertyFilters}
+            onFilterClick={setActiveFilter}
+            activeFilter={activeFilter}
+          />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {properties.map((property, index) => (
+          {filteredProperties.map((property, index) => (
             <PropertyCard key={index} {...property} />
           ))}
         </div>

@@ -12,9 +12,10 @@ interface Agent {
 
 interface AgentCarouselProps {
   agents: Agent[];
+  onContactClick?: (agentName: string) => void;
 }
 
-export function AgentCarousel({ agents }: AgentCarouselProps) {
+export function AgentCarousel({ agents, onContactClick }: AgentCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextAgent = () => {
@@ -33,6 +34,8 @@ export function AgentCarousel({ agents }: AgentCarouselProps) {
           name={agents[currentIndex].name}
           title={agents[currentIndex].title}
           address={agents[currentIndex].info}
+          showContactButton
+          onContactClick={onContactClick}
         />
       </div>
       
