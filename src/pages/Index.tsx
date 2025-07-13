@@ -9,6 +9,7 @@ import { AgentCarousel } from "@/components/AgentCarousel";
 import { NewsletterSection } from "@/components/NewsletterSection";
 import { Footer } from "@/components/Footer";
 import { ContactModal } from "@/components/ContactModal";
+import { ProfileSection } from "@/components/ProfileSection";
 
 // Import agent images
 import agentMyriam from "@/assets/agent-myriam-ortega.jpg";
@@ -154,6 +155,7 @@ const Index = () => {
           </div>
         </section>
 
+        <ProfileSection />
         <div id="contact">
           <NewsletterSection />
           <Footer />

@@ -32,9 +32,6 @@ export function Navigation() {
             <div className="flex items-center space-x-4">
               <span className="text-sm text-muted-foreground">+675 123 4567</span>
               <Button variant="outline" size="sm" onClick={() => setIsModalOpen(true)}>Contact Us</Button>
-              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground text-sm font-medium">U</span>
-              </div>
             </div>
           </div>
         </div>
