@@ -68,7 +68,8 @@ export function PropertyCard({
           size="sm" 
           className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
         >
-          <ArrowRight className="h-4 w-4 ml-auto" />
+          View Details
+          <ArrowRight className="h-4 w-4 ml-2" />
         </Button>
       </CardContent>
     </Card>
