@@ -109,8 +109,9 @@ const Index = () => {
           </div>
         </section>
 
+        <ProfileSection />
         {/* Contact Agents Section */}
-        <section className="py-16 px-6 bg-muted/20">
+        <section id="contact" className="py-16 px-6 bg-muted/20">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
               <div className="lg:col-span-2">
@@ -154,9 +155,7 @@ const Index = () => {
             </div>
           </div>
         </section>
-
-        <ProfileSection />
-        <div id="contact">
+        <div>
           <NewsletterSection />
           <Footer />
         </div>
