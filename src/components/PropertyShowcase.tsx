@@ -14,22 +14,22 @@ export function PropertyShowcase() {
         
         <div className="p-6">
           <div className="flex items-baseline gap-2 mb-3">
-            <span className="text-3xl font-bold text-primary">$3,499</span>
+            <span className="text-3xl font-bold text-primary">K8,500</span>
             <span className="text-muted-foreground">/month</span>
           </div>
           
           <h3 className="text-xl font-semibold text-foreground mb-2">
-            Elegant Contemporary Villa
+            Premium Office Tower
           </h3>
           
           <p className="text-muted-foreground text-sm mb-4">
-            400 Ventura Pl, San Ramon, CA 94583, USA
+            Level 15, Douglas Street, Port Moresby, NCD, PNG
           </p>
           
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <span>3 Beds</span>
-            <span>3 Baths</span>
-            <span>68m²</span>
+            <span>350m²</span>
+            <span>15th Floor</span>
+            <span>20 Parking</span>
           </div>
         </div>
       </div>

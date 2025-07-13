@@ -5,9 +5,9 @@ import { PropertyShowcase } from "@/components/PropertyShowcase";
 
 export function HeroSection() {
   const stats = [
-    { value: "125k+", label: "Guest Reviews" },
-    { value: "80k+", label: "Happy Customers" },
-    { value: "120k+", label: "Properties" }
+    { value: "500+", label: "Business Clients" },
+    { value: "250+", label: "Commercial Properties" },
+    { value: "1200+", label: "Successful Leases" }
   ];
 
   return (
@@ -18,13 +18,13 @@ export function HeroSection() {
           <div className="space-y-8">
             <div>
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-                Reserve Your Ideal <span className="text-primary">Holiday</span>
+                Find Your Perfect <span className="text-primary">Commercial Space</span>
               </h1>
               <p className="text-lg text-muted-foreground mb-8 max-w-md">
-                Discover exceptional properties worldwide with unmatched service and personalized experiences.
+                Connecting businesses with premium commercial properties across Papua New Guinea.
               </p>
               <Button size="lg" className="text-lg px-8 py-3">
-                Let's Try
+                Explore Properties
               </Button>
             </div>
             

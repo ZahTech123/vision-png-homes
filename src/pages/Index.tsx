@@ -16,28 +16,28 @@ import modernVillaPool from "@/assets/modern-white-villa-pool.jpg";
 
 const Index = () => {
   const stats = [
-    { value: "200k", label: "Causal Related" },
-    { value: "65k", label: "Happy Customers" },
-    { value: "150k", label: "Properties" }
+    { value: "350+", label: "Commercial Leases" },
+    { value: "98%", label: "Client Satisfaction" },
+    { value: "K45M+", label: "Total Lease Value" }
   ];
 
   const agents = [
     { 
       name: "Myriam Ortega", 
-      title: "Agents", 
-      info: "2648 Don Jackson Lane Nas...", 
+      title: "Commercial Property Specialist", 
+      info: "Level 8, Deloitte Tower, Port Moresby", 
       imageSrc: agentMyriam 
     },
     { 
       name: "David Jones", 
-      title: "Agents", 
-      info: "2648 Don Jackson Lane Nas...", 
+      title: "Office Space Expert", 
+      info: "Champion Parade, Port Moresby", 
       imageSrc: agentDavid 
     },
     { 
       name: "Mary Garcia", 
-      title: "Agents", 
-      info: "2648 Don Jackson Lane Nas...", 
+      title: "Retail & Industrial Specialist", 
+      info: "Waigani Drive, Port Moresby", 
       imageSrc: agentMary 
     }
   ];
@@ -54,7 +54,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
             <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4 max-w-3xl">
-              Your Trusted Partner in Elite Property Brokerage
+              Your Trusted Partner in Commercial Real Estate
             </h2>
             <StatsBar stats={stats} />
           </div>
@@ -70,15 +70,15 @@ const Index = () => {
             
             <div className="bg-primary text-primary-foreground p-12 rounded-xl">
               <h3 className="text-3xl font-bold mb-4">
-                Showcasing Premium Properties to Discriminating Buyers Globally
+                Connecting Businesses with Premium Commercial Spaces Across PNG
               </h3>
               <p className="text-primary-foreground/80 mb-8 leading-relaxed">
-                Lorem ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                We specialize in commercial real estate solutions that drive business success. From modern office towers 
+                in Port Moresby's CBD to strategic retail locations and industrial facilities, we help businesses 
+                find the perfect space to grow and thrive in Papua New Guinea's dynamic market.
               </p>
               <button className="bg-background text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-background/90 transition-colors">
-                Choose Your Property
+                Find Commercial Space
               </button>
             </div>
           </div>
@@ -95,17 +95,17 @@ const Index = () => {
                   Our Agent
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">
-                  Your Gateway to Exceptional Properties Around the World
+                  Your Gateway to Premium Commercial Spaces in PNG
                 </h3>
                 <p className="text-muted-foreground mb-6 text-sm leading-relaxed max-w-sm">
-                  Discover a different kind of real estate journey, where exceptional properties meet unmatched service.
+                  Experience exceptional commercial real estate service tailored to your business needs across Papua New Guinea.
                 </p>
                 <div className="max-w-xs">
                   <AgentCard
                     imageSrc={agentMyriam}
                     name="Myriam Ortega"
-                    title="Agents"
-                    address="2648 Don Jackson Lane Nas..."
+                    title="Commercial Property Specialist"
+                    address="Level 8, Deloitte Tower, Port Moresby"
                     showContactButton={true}
                   />
                 </div>
@@ -119,10 +119,10 @@ const Index = () => {
             
             <div className="lg:col-span-3">
               <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-                Contact With Our Top Agents
+                Contact Our Commercial Specialists
               </h2>
               <p className="text-muted-foreground mb-8 text-lg">
-                Our expert real estate agents are here to guide you every step of the way.
+                Our expert commercial real estate specialists are ready to help you find the perfect business space.
               </p>
               <AgentCarousel agents={agents} />
             </div>

@@ -2,18 +2,18 @@ export function ProcessSection() {
   const steps = [
     {
       number: "01",
-      title: "Find Your Perfect Property",
-      description: "Browse through our curated selection of premium properties tailored to your needs."
+      title: "Identify Your Business Needs",
+      description: "Define your space requirements, location preferences, and budget for your commercial property."
     },
     {
       number: "02", 
-      title: "Complete Your Information",
-      description: "Provide your details to secure availability and schedule viewings."
+      title: "Schedule Property Viewings",
+      description: "Tour available commercial spaces and conduct thorough site inspections with our specialists."
     },
     {
       number: "03",
-      title: "Instant Confirmation",
-      description: "Complete your transaction and receive instant confirmation for your property."
+      title: "Secure Your Lease Agreement",
+      description: "Finalize terms and complete your commercial lease agreement with full legal support."
     }
   ];
 

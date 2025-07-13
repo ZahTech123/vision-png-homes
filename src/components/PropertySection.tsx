@@ -11,75 +11,74 @@ import classicColonial from "@/assets/classic-colonial-house.jpg";
 
 export function PropertySection() {
   const propertyFilters = [
-    { text: "All Type", active: true },
-    { text: "Apartments/Flats", active: false },
-    { text: "Villas", active: false },
-    { text: "Duplex Homes", active: false },
-    { text: "Penthouse Suites", active: false },
-    { text: "Bungalows", active: false },
-    { text: "Farmhouses", active: false }
+    { text: "All Properties", active: true },
+    { text: "Office Buildings", active: false },
+    { text: "Retail Spaces", active: false },
+    { text: "Warehouses", active: false },
+    { text: "Co-working Spaces", active: false },
+    { text: "Industrial Sites", active: false }
   ];
 
   const properties = [
     {
       imageSrc: elegantVilla,
-      price: "$ 3,499.00",
+      price: "K 8,500",
       period: "/month",
-      title: "Elegant Contemporary Villa with Garden",
-      address: "400 Ventura Pl, San Ramon, CA 94583, USA",
-      beds: "3 Beds",
-      bathrooms: "3 Bathrooms",
-      area: "68m²"
+      title: "Premium Office Tower",
+      address: "Level 15, Douglas Street, Port Moresby, NCD",
+      beds: "350m²",
+      bathrooms: "15th Floor",
+      area: "20 Parking"
     },
     {
       imageSrc: luxuryBeachfront,
-      price: "$ 3,499.00",
+      price: "K 6,800",
       period: "/month",
-      title: "Luxury Beachfront Retreat with Terrace",
-      address: "400 Ventura Pl, San Ramon, CA 94583, USA",
-      beds: "3 Beds",
-      bathrooms: "3 Bathrooms",
-      area: "68m²"
+      title: "Retail Shopping Complex",
+      address: "Milne Bay Road, Port Moresby, NCD",
+      beds: "200m²",
+      bathrooms: "Street Level",
+      area: "10 Parking"
     },
     {
       imageSrc: modernMinimalist,
-      price: "$ 3,499.00",
+      price: "K 12,500",
       period: "/month",
-      title: "Modern Minimalist Home with Smart Features",
-      address: "400 Ventura Pl, San Ramon, CA 94583, USA",
-      beds: "3 Beds",
-      bathrooms: "3 Bathrooms",
-      area: "68m²"
+      title: "Modern Corporate Center",
+      address: "Waigani Drive, Port Moresby, NCD",
+      beds: "280m²",
+      bathrooms: "Ground Floor",
+      area: "15 Parking"
     },
     {
       imageSrc: opulentPenthouse,
-      price: "$ 3,499.00",
+      price: "K 15,000",
       period: "/month",
-      title: "Opulent Penthouse with Rooftop Deck",
-      address: "400 Ventura Pl, San Ramon, CA 94583, USA",
-      beds: "3 Beds",
-      bathrooms: "3 Bathrooms",
-      area: "68m²"
+      title: "Executive Business Suite",
+      address: "Champion Parade, Port Moresby, NCD",
+      beds: "450m²",
+      bathrooms: "Top Floor",
+      area: "25 Parking"
     },
     {
       imageSrc: stylishStudio,
-      price: "$ 3,499.00",
+      price: "K 4,200",
       period: "/month",
-      title: "Stylish Studio Apartment with Balcony",
-      address: "400 Ventura Pl, San Ramon, CA 94583, USA",
-      beds: "3 Beds",
-      bathrooms: "3 Bathrooms",
-      area: "68m²"
+      title: "Co-working Hub",
+      address: "Ela Beach Road, Port Moresby, NCD",
+      beds: "150m²",
+      bathrooms: "Open Plan",
+      area: "8 Parking"
     },
     {
       imageSrc: classicColonial,
-      price: "$ 3,499.00",
+      price: "K 18,000",
       period: "/month",
-      title: "Classic Colonial House with Spacious Porch",
-      address: "400 Ventura Pl, San Ramon, CA 94583, USA",
-      beds: "3 Beds",
-      bathrooms: "3 Bathrooms",
-      area: "68m²"
+      title: "Industrial Warehouse",
+      address: "Taurama Road, Port Moresby, NCD",
+      beds: "800m²",
+      bathrooms: "High Ceiling",
+      area: "40 Parking"
     }
   ];
 
@@ -88,10 +87,10 @@ export function PropertySection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Explore Our Latest <span className="text-primary">Property</span>
+            Explore Our Latest <span className="text-primary">Commercial Properties</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            Discover our handpicked selection of premium properties available for rent and sale.
+            Discover premium commercial spaces with modern amenities and strategic locations across PNG.
           </p>
           
           <FilterBar filters={propertyFilters} />

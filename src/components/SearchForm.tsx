@@ -14,10 +14,11 @@ export function SearchForm() {
               <SelectValue placeholder="Property type" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="villa">Villa</SelectItem>
-              <SelectItem value="apartment">Apartment</SelectItem>
-              <SelectItem value="penthouse">Penthouse</SelectItem>
-              <SelectItem value="house">House</SelectItem>
+              <SelectItem value="office">Office Building</SelectItem>
+              <SelectItem value="retail">Retail Space</SelectItem>
+              <SelectItem value="warehouse">Warehouse</SelectItem>
+              <SelectItem value="coworking">Co-working Space</SelectItem>
+              <SelectItem value="industrial">Industrial Site</SelectItem>
             </SelectContent>
           </Select>
         </div>
