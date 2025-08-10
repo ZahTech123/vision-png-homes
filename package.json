@@ -44,10 +44,12 @@
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
+    "dotenv": "^17.2.1",
     "embla-carousel-react": "^8.3.0",
     "input-otp": "^1.2.4",
     "lucide-react": "^0.462.0",
     "next-themes": "^0.3.0",
+    "openai": "^5.12.2",
     "react": "^18.3.1",
     "react-day-picker": "^8.10.1",
     "react-dom": "^18.3.1",
@@ -78,6 +80,19 @@
     "tailwindcss": "^3.4.11",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
-  }
+    "vite": "^7.1.1"
+  },
+  "description": "**URL**: https://lovable.dev/projects/acd65ca1-ae9a-4669-8e6e-b082b4f4ed8f",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZahTech123/vision-png-homes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZahTech123/vision-png-homes/issues"
+  },
+  "homepage": "https://github.com/ZahTech123/vision-png-homes#readme"
 }

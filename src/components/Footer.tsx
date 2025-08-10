@@ -9,8 +9,8 @@ export function Footer() {
               Your trusted partner in finding exceptional properties across Papua New Guinea.
             </p>
             <div className="text-sm text-muted-foreground">
-              <p>+675 123 4567</p>
-              <p>info@visionrealestate.pg</p>
+              <p>+675 320 0664</p>
+              <p>info@visionrealestatepng.com</p>
             </div>
           </div>
           

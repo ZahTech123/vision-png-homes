@@ -25,3 +25,4 @@ const App = () => (
 );
 
 export default App;
+<span className="text-sm text-muted-foreground">+675 8264 4597</span>

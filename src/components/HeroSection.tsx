@@ -18,10 +18,10 @@ export function HeroSection() {
           <div className="space-y-8">
             <div>
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-                Find Your Perfect <span className="text-primary">Commercial Space</span>
+                Find at ANG Haus <span className="text-primary">Your Perfect Commercial Space</span>
               </h1>
               <p className="text-lg text-muted-foreground mb-8 max-w-md">
-                Connecting businesses with premium commercial properties across Papua New Guinea.
+                Connecting businesses with premium commercial properties in Port Moresby’s CBD.
               </p>
               <Button size="lg" className="text-lg px-8 py-3">
                 Explore Properties

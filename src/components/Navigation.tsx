@@ -1,3 +1,5 @@
+
+import logo from "@/assets/VREL_Logo.png";
 import { Button } from "@/components/ui/button";
 
 export function Navigation() {
@@ -6,6 +8,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
+            <img src={logo} alt="Vision Real Estate Logo" className="h-10 w-auto mr-3" />
             <h1 className="text-xl font-bold text-foreground">Vision Real Estate PNG</h1>
             
             <div className="hidden md:flex items-center space-x-6">
@@ -18,7 +21,7 @@ export function Navigation() {
           </div>
           
           <div className="flex items-center space-x-4">
-            <span className="text-sm text-muted-foreground">+675 123 4567</span>
+            <span className="text-sm text-muted-foreground">+675 320 0664</span>
             <Button variant="outline" size="sm">Contact Us</Button>
             <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
               <span className="text-primary-foreground text-sm font-medium">U</span>

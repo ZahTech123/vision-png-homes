@@ -22,30 +22,30 @@ export function PropertySection() {
   const properties = [
     {
       imageSrc: elegantVilla,
-      price: "K 8,500",
+      price: "K 6,666.00",
       period: "/month",
-      title: "Premium Office Tower",
-      address: "Level 15, Douglas Street, Port Moresby, NCD",
-      beds: "350m²",
-      bathrooms: "15th Floor",
-      area: "20 Parking"
+      title: "Premium Office Space",
+      address: "Level 7, Suite 3, ANG Haus, opposite Crowne Hotel",
+      beds: "180m²",
+      bathrooms: "7th Floor",
+      area: "external parking space"
     },
     {
       imageSrc: luxuryBeachfront,
-      price: "K 6,800",
+      price: "K6,660",
       period: "/month",
-      title: "Retail Shopping Complex",
-      address: "Milne Bay Road, Port Moresby, NCD",
+      title: "Classic boardroom",
+      address: "Level 7, ANG Haus, Opposite Crowne Hotel",
       beds: "200m²",
       bathrooms: "Street Level",
       area: "10 Parking"
     },
     {
       imageSrc: modernMinimalist,
-      price: "K 12,500",
+      price: "K6,000.00",
       period: "/month",
-      title: "Modern Corporate Center",
-      address: "Waigani Drive, Port Moresby, NCD",
+      title: "Perfect Corporate Office",
+      address: "Level7, Suite 1, ANG Haus, Port Moresby CBD",
       beds: "280m²",
       bathrooms: "Ground Floor",
       area: "15 Parking"

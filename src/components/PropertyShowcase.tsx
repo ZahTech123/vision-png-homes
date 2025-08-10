@@ -1,4 +1,4 @@
-import elegantVilla from "@/assets/elegant-contemporary-villa.jpg";
+import officeBuildingImage from "@/assets/office-building.jpg";
 
 export function PropertyShowcase() {
   return (
@@ -6,8 +6,8 @@ export function PropertyShowcase() {
       <div className="bg-background rounded-3xl overflow-hidden shadow-card-lg border border-border">
         <div className="aspect-[4/3] overflow-hidden">
           <img 
-            src={elegantVilla}
-            alt="Featured property showcase"
+            src={officeBuildingImage}
+            alt="Modern office building showcase"
             className="w-full h-full object-cover"
           />
         </div>
@@ -19,17 +19,17 @@ export function PropertyShowcase() {
           </div>
           
           <h3 className="text-xl font-semibold text-foreground mb-2">
-            Premium Office Tower
+            Premium Office Space
           </h3>
           
           <p className="text-muted-foreground text-sm mb-4">
-            Level 15, Douglas Street, Port Moresby, NCD, PNG
+            Level 7, Suite 3, ANG Haus, opposite Crowne Hotel
           </p>
           
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <span>350m²</span>
-            <span>15th Floor</span>
-            <span>20 Parking</span>
+            <span>180m²</span>
+            <span>7th Floor</span>
+            <span>external parking space</span>
           </div>
         </div>
       </div>

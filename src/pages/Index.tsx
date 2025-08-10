@@ -23,9 +23,9 @@ const Index = () => {
 
   const agents = [
     { 
-      name: "Myriam Ortega", 
+      name: "Anna Doa", 
       title: "Commercial Property Specialist", 
-      info: "Level 8, Deloitte Tower, Port Moresby", 
+      info: "Ground Floor, ANG Haus, Opposite Crowne Hotel, Port Moresby CBD", 
       imageSrc: agentMyriam 
     },
     { 
@@ -103,15 +103,15 @@ const Index = () => {
                 <div className="max-w-xs">
                   <AgentCard
                     imageSrc={agentMyriam}
-                    name="Myriam Ortega"
+                    name="Anna Doa"
                     title="Commercial Property Specialist"
-                    address="Level 8, Deloitte Tower, Port Moresby"
+                    address="Ground Floor, ANG Haus, Opposite Crowne Hotel, Port Moresby CBD"
                     showContactButton={true}
                   />
                 </div>
                 <img 
                   src={agentMyriam}
-                  alt="Real estate agent Myriam Ortega"
+                  alt="Real estate agent Anna Doa"
                   className="absolute right-4 bottom-0 w-32 h-auto opacity-20"
                 />
               </div>
