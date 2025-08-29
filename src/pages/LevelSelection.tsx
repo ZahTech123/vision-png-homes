@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 // Import building images
-import img1 from '../assets/Level/BuildingView/IMG-20250804-WA0077.jpg';
-import img2 from '../assets/Level/BuildingView/IMG-20250804-WA0078.jpg';
-import img3 from '../assets/Level/BuildingView/IMG-20250804-WA0079.jpg';
-import img4 from '../assets/Level/BuildingView/IMG-20250804-WA0080.jpg';
-import img5 from '../assets/Level/BuildingView/IMG-20250804-WA0081.jpg';
-import img6 from '../assets/Level/BuildingView/IMG-20250804-WA0082.jpg';
+import img1 from '/Level/BuildingView/IMG-20250804-WA0077.jpg';
+import img2 from '/Level/BuildingView/IMG-20250804-WA0078.jpg';
+import img3 from '/Level/BuildingView/IMG-20250804-WA0079.jpg';
+import img4 from '/Level/BuildingView/IMG-20250804-WA0080.jpg';
+import img5 from '/Level/BuildingView/IMG-20250804-WA0081.jpg';
+import img6 from '/Level/BuildingView/IMG-20250804-WA0082.jpg';
 
 const buildingImages = [img1, img2, img3, img4, img5, img6];
 
