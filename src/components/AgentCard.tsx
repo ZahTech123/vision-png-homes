@@ -28,7 +28,12 @@ export function AgentCard({ imageSrc, name, title, address, showContactButton = 
           {address}
         </p>
         {showContactButton && (
-          <Button variant="outline" size="sm" className="w-full">
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="w-full"
+            onClick={() => window.open('mailto:anna.doa@visionrealestatepng.com', '_blank')}
+          >
             Contact Me
           </Button>
         )}

@@ -5,6 +5,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import { LevelSelection } from "./pages/LevelSelection";
+import { LevelDisplay } from "./pages/LevelDisplay";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +19,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/level-selection" element={<LevelSelection />} />
+          <Route path="/level/:levelId" element={<LevelDisplay />} />
+          <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
@@ -25,4 +31,3 @@ const App = () => (
 );
 
 export default App;
-<span className="text-sm text-muted-foreground">+675 8264 4597</span>

@@ -13,24 +13,11 @@ export function PropertyShowcase() {
         </div>
         
         <div className="p-6">
-          <div className="flex items-baseline gap-2 mb-3">
-            <span className="text-3xl font-bold text-primary">K8,500</span>
-            <span className="text-muted-foreground">/month</span>
-          </div>
-          
-          <h3 className="text-xl font-semibold text-foreground mb-2">
-            Premium Office Space
-          </h3>
-          
-          <p className="text-muted-foreground text-sm mb-4">
-            Level 7, Suite 3, ANG Haus, opposite Crowne Hotel
+          <h2 className="text-2xl font-bold text-primary mb-2">ANG Haus</h2>
+          <p className="text-muted-foreground text-base mb-4 leading-relaxed">
+            Conveniently situated in the heart of Town CBD, opposite the Crowne Hotel.
+            With many available office suites for commercial leasing. See our listing below.
           </p>
-          
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <span>180m²</span>
-            <span>7th Floor</span>
-            <span>external parking space</span>
-          </div>
         </div>
       </div>
     </div>

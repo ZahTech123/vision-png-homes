@@ -22,63 +22,63 @@ export function PropertySection() {
   const properties = [
     {
       imageSrc: elegantVilla,
-      price: "K 6,666.00",
-      period: "/month",
-      title: "Premium Office Space",
-      address: "Level 7, Suite 3, ANG Haus, opposite Crowne Hotel",
-      beds: "180m²",
-      bathrooms: "7th Floor",
+      price: "K21,666/month",
+      period: "",
+      title: "Level 1 Suite 2 - Premium Office Space",
+      address: "Level 1, Suite 2, ANG Haus, opposite Crowne Hotel",
+      beds: "260m²",
+      bathrooms: "1st Floor",
       area: "external parking space"
     },
     {
       imageSrc: luxuryBeachfront,
-      price: "K6,660",
-      period: "/month",
-      title: "Classic boardroom",
-      address: "Level 7, ANG Haus, Opposite Crowne Hotel",
-      beds: "200m²",
-      bathrooms: "Street Level",
-      area: "10 Parking"
+      price: "K6,666",
+      period: " per month",
+      title: "Level 7 Suite 2 - Classic Office Space",
+      address: "Level 7, Suite 2, ANG Haus, opposite Crowne Hotel",
+      beds: "180m²",
+      bathrooms: "7th Floor",
+      area: "external parking"
     },
     {
       imageSrc: modernMinimalist,
-      price: "K6,000.00",
-      period: "/month",
-      title: "Perfect Corporate Office",
-      address: "Level7, Suite 1, ANG Haus, Port Moresby CBD",
-      beds: "280m²",
-      bathrooms: "Ground Floor",
-      area: "15 Parking"
+      price: "K6,666",
+      period: " per month",
+      title: "Level 8 Suite 1 - Perfect Corporate Office",
+      address: "Level 8, Suite 1, ANG Haus",
+      beds: "80m²",
+      bathrooms: "8th Floor",
+      area: "external parking"
     },
     {
       imageSrc: opulentPenthouse,
-      price: "K 15,000",
-      period: "/month",
+      price: "K6,666",
+      period: " per month",
       title: "Executive Business Suite",
-      address: "Champion Parade, Port Moresby, NCD",
-      beds: "450m²",
-      bathrooms: "Top Floor",
-      area: "25 Parking"
+      address: "Level 8, Suite 2, ANG Haus, Port Moresby CBD",
+      beds: "80m²",
+      bathrooms: "8th Floor",
+      area: "external parking"
     },
     {
       imageSrc: stylishStudio,
-      price: "K 4,200",
-      period: "/month",
-      title: "Co-working Hub",
-      address: "Ela Beach Road, Port Moresby, NCD",
-      beds: "150m²",
-      bathrooms: "Open Plan",
-      area: "8 Parking"
+      price: "K6,666",
+      period: " per month",
+      title: "Level 8 Suite 3 - Co-working Hub",
+      address: "Level 8, Suite 3, ANG Haus, POM CBD",
+      beds: "80m²",
+      bathrooms: "8th Floor",
+      area: "external parking"
     },
     {
       imageSrc: classicColonial,
-      price: "K 18,000",
-      period: "/month",
-      title: "Industrial Warehouse",
-      address: "Taurama Road, Port Moresby, NCD",
-      beds: "800m²",
-      bathrooms: "High Ceiling",
-      area: "40 Parking"
+      price: "K6,666",
+      period: " per month",
+      title: "Level 8 Suite 4 - Corporate office",
+      address: "Level 8, Suite 4, ANG Haus, Ela Beach view",
+      beds: "80m²",
+      bathrooms: "8th Floor",
+      area: "external parking"
     }
   ];
 

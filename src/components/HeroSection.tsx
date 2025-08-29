@@ -1,14 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { StatsBar } from "@/components/StatsBar";
-import { SearchForm } from "@/components/SearchForm";
 import { PropertyShowcase } from "@/components/PropertyShowcase";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export function HeroSection() {
   const stats = [
-    { value: "500+", label: "Business Clients" },
-    { value: "250+", label: "Commercial Properties" },
-    { value: "1200+", label: "Successful Leases" }
+    { value: "Seven", label: "Premium Spaces Available" },
+    { value: "Flexible", label: "Customizable Office Sizes & Layouts" },
+    { value: "24/7", label: "Security & Access" }
   ];
+
+  const navigate = useNavigate();
+
+const handleExploreClick = () => {
+  navigate('/level-selection');
+};
 
   return (
     <section className="bg-gradient-to-br from-primary/5 to-primary/10 py-16">
@@ -23,7 +30,7 @@ export function HeroSection() {
               <p className="text-lg text-muted-foreground mb-8 max-w-md">
                 Connecting businesses with premium commercial properties in Port Moresby’s CBD.
               </p>
-              <Button size="lg" className="text-lg px-8 py-3">
+              <Button size="lg" className="text-lg px-8 py-3" onClick={handleExploreClick}>
                 Explore Properties
               </Button>
             </div>
@@ -36,9 +43,6 @@ export function HeroSection() {
           {/* Right Column - Property Preview */}
           <div className="relative">
             <PropertyShowcase />
-            <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-full max-w-md">
-              <SearchForm />
-            </div>
           </div>
         </div>
       </div>

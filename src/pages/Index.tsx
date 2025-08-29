@@ -6,6 +6,7 @@ import { StatsBar } from "@/components/StatsBar";
 import { AgentCard } from "@/components/AgentCard";
 import { AgentCarousel } from "@/components/AgentCarousel";
 import { NewsletterSection } from "@/components/NewsletterSection";
+import { useEffect } from 'react';
 import { Footer } from "@/components/Footer";
 
 // Import agent images
@@ -16,9 +17,9 @@ import modernVillaPool from "@/assets/modern-white-villa-pool.jpg";
 
 const Index = () => {
   const stats = [
-    { value: "350+", label: "Commercial Leases" },
-    { value: "98%", label: "Client Satisfaction" },
-    { value: "K45M+", label: "Total Lease Value" }
+    { value: "Many", label: "Exclusive Vacancies at ANG Haus" },
+    { value: "Grade A", label: "Commercial Office Standards" },
+    { value: "High", label: "Tenant Retention & Demand" }
   ];
 
   const agents = [
@@ -41,6 +42,16 @@ const Index = () => {
       imageSrc: agentMary 
     }
   ];
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
