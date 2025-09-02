@@ -32,7 +32,7 @@ export function PropertySection() {
     },
     {
       imageSrc: luxuryBeachfront,
-      price: "K6,666",
+      price: "K15,000",
       period: " per month",
       title: "Level 7 Suite 2 - Classic Office Space",
       address: "Level 7, Suite 2, ANG Haus, opposite Crowne Hotel",
