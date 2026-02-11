@@ -4,7 +4,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import SiteDown from "./pages/SiteDown";
 import NotFound from "./pages/NotFound";
 import { LevelSelection } from "./pages/LevelSelection";
 import { LevelDisplay } from "./pages/LevelDisplay";
@@ -19,8 +18,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<SiteDown />} />
-          <Route path="/home" element={<Index />} />
+          <Route path="/" element={<Index />} />
           <Route path="/level-selection" element={<LevelSelection />} />
           <Route path="/level/:levelId" element={<LevelDisplay />} />
           <Route path="/about" element={<About />} />
